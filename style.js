@@ -2,10 +2,12 @@ import {StyleSheet} from 'react-native';
 
 const style = StyleSheet.create({
     container: {
-      backgroundColor: 'white'
+        backgroundColor: "#e1e7ef",
+        height: '100%'
     },
-    text: {
-      color: 'white'
+    mainContent: {
+        marginLeft: 8,
+        marginRight: 8,
     },
     imgSmall: {
         height: 100,
@@ -15,7 +17,25 @@ const style = StyleSheet.create({
     trendingItems: {
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'white',
+        padding: 5,
+        margin: 5,
+        borderRadius: 7,
+        shadowColor: 'black',
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+        elevation: 6
+    },
+    textTitle : {
+        fontWeight: 'bold',
+        fontSize: 20,
+        marginTop: 6
+    },
+    textSmallGray: {
+        fontSize: 10,
+        color: 'gray'
     }
   });
 
