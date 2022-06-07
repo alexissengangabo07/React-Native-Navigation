@@ -36,6 +36,10 @@ const style = StyleSheet.create({
     textSmallGray: {
         fontSize: 10,
         color: 'gray'
+    }, 
+    textBold: {
+        fontWeight: 'bold',
+        fontSize: 20
     }
   });
 
