@@ -34,12 +34,13 @@ const style = StyleSheet.create({
         marginTop: 6
     },
     textSmallGray: {
-        fontSize: 10,
+        fontSize: 14,
         color: 'gray'
     }, 
     textBold: {
         fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 20,
+        marginTop: -15
     }
   });
 
