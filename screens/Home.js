@@ -1,6 +1,4 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
@@ -8,6 +6,8 @@ import {
   Image, Button, TouchableOpacity, Alert
 } from 'react-native';
 import style from '../style'; 
+
+const Tab = createBottomTabNavigator();
 
 function Home({ navigation }) {
   return (
@@ -21,36 +21,36 @@ function Home({ navigation }) {
                   <Image source={require("../images/img-1-new.png")} style={style.imgSmall} />
               </View>
               <View>
-                  <Text class="username">@tegan</Text>
-                  <Text class="trending-detail">World Peace Builder</Text>
+                  <Text style={style.textBold}>@tegan</Text>
+                  <Text style={style.textSmallGray}>World Peace Builder</Text>
               </View>
           </TouchableOpacity>
           
-          <TouchableOpacity style={style.trendingItems} onPress={() => Alert.alert('')}>
+          <TouchableOpacity style={style.trendingItems}  onPress={() => navigation.navigate('Detail')}>
               <View>
                   <Image source={require("../images/img-1.png")} style={style.imgSmall} />
               </View>
               <View>
-                  <Text class="username">@morgan</Text>
-                  <Text class="trending-detail">Super Cool Project</Text>
+                  <Text style={style.textBold}>@morgan</Text>
+                  <Text style={style.textSmallGray}>Super Cool Project</Text>
               </View>
           </TouchableOpacity>
-          <TouchableOpacity style={style.trendingItems} onPress={() => Alert.alert('')}>
+          <TouchableOpacity style={style.trendingItems}  onPress={() => navigation.navigate('Detail')}>
               <View>
                   <Image source={require("../images/img-3.png")} style={style.imgSmall} />
               </View>
               <View>
-                  <Text class="username">@kendall</Text>
-                  <Text class="trending-detail">Life Changing App</Text>
+                  <Text style={style.textBold}>@kendall</Text>
+                  <Text style={style.textSmallGray}>Life Changing App</Text>
               </View>
           </TouchableOpacity>
-          <TouchableOpacity style={style.trendingItems} onPress={() => Alert.alert('')}>
+          <TouchableOpacity style={style.trendingItems}  onPress={() => navigation.navigate('Detail')}>
               <View>
                   <Image source={require("../images/img-4.png")} style={style.imgSmall} />
               </View>
               <View>
-                  <Text class="username">@alex</Text>
-                  <Text class="trending-detail">No Traffic Maker</Text>
+                  <Text style={style.textBold}>@alex</Text>
+                  <Text style={style.textSmallGray}>No Traffic Maker</Text>
               </View>
           </TouchableOpacity>
       </View>

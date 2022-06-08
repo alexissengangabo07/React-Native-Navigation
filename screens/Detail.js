@@ -7,8 +7,8 @@ function Page1() {
   return (
     <SafeAreaView style={style.container}>
       <ScrollView>
-      <View style={{flex: 1, alignItems: 'center'}}>
-      <Text>Page1</Text>
+      <View>
+      <Text>MORE DETAILS</Text>
       </View>
       </ScrollView>
     </SafeAreaView>
